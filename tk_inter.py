@@ -135,7 +135,7 @@ class Tela:
         lista_nome = []
         lista_preco = []
 
-        for i in database.cur.execute(f"SELECT * FROM tenis WHERE marca LIKE '%{self.clicked.get().lower()}%'"):
+        for i in database.cur.execute(f"SELECT * FROM tenis WHERE marca LIKE '%{self.entrada_usuario.get().lower()}%'"):
             lista_marca.append(i[0])
             lista_nome.append(i[1])
             lista_preco.append(i[2])
