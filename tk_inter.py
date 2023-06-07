@@ -107,7 +107,7 @@ class Tela:
         self.clicked = StringVar()
         self.clicked.set("Escolha um formato")
         drop = OptionMenu(self.frame_1, self.clicked, *options)
-        drop.place(relx=0.25, rely=0.80, relwidth=0.20, relheight=0.15)
+        drop.place(relx=0.40, rely=0.80, relwidth=0.20, relheight=0.15)
 
     def csv(self):
         lista_marca = []
